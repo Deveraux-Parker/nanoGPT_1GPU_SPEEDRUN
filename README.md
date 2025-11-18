@@ -5,6 +5,10 @@ This is an effort to speedrun training NanoGPT (gpt-2 124M) on a single consumer
 I will set a baseline and provide all training an inference code here, along with the trained model checkpoints at this huggingface link:
 https://huggingface.co/DevParker/NanoGPT-124m-In-A-Cave-With-A-Box-Of-Scraps
 
+We'll be using data from a cached version of FineWeb10B that is already tokenized with the GPT-2 tokenizer to save us some preprocessing.
+hf_hub_download(repo_id="kjj0/fineweb10B-gpt2", filename=fname,
+                  repo_type="dataset", local_dir=local_dir)
+
 ---
 
 ## Speedrun Leaderboard 🏁
